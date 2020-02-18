@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bulma Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="site.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+    <div>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <h3>Project Name</h3>
+        </div>
+        <div class="sidebar-profile">
+          <div class="profile-image-container">
+            <div class="profile-image-wrapper">
+              <div class="profile-image">
+                <img src="profile.jpg"/>
+              </div>
+              <h3>James Alt</h3>
+              <p>Owner</p>
+            </div>
+          </div>
+        </div>
+        <aside class="menu sidebar-menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="#">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <i class="fas fa-sliders-h"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+          </ul>
+        </aside>  
+      </div> 
+
+       <!-- main content -->
+       <main class="main-content">
+        <div class="page-nav">
+          <div class="navbar-start">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+              <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Sub Page 1</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <span class="indicator"></span>
+              <i class="fas fa-bell"></i>
+            </div>
+            <div class="navbar-item">
+              <i class="fas fa-user-lock"></i>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

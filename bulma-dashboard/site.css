@@ -1,0 +1,125 @@
+:root {
+  --content-bg-color: #f7f7f7;
+  --sidebar-bg-color: #293462;
+  --sidebar-border-color: #ededed;
+  --sidebar-text: #ededed;
+  --header-text: #4a4a4a;
+  --accent-color: hsl(171, 100%, 41%);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100%;
+  background: var(--sidebar-bg-color);
+  border-right: 1px solid var(--sidebar-border-color);
+  z-index: 91;
+  transform: translateX(0);
+  transition: all .3s;
+}
+
+.sidebar-header {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.sidebar-header h3 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: var(--sidebar-text);
+}
+
+.profile-image-container {
+  position: relative;
+  min-height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image-wrapper {
+  text-align: center;
+}
+
+.profile-image-wrapper h3 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--sidebar-text);
+}
+
+.profile-image-wrapper p {
+  font-size: .8rem;
+  color: var(--sidebar-text);
+}
+
+.profile-image {
+  position: relative;
+  max-width: 70px;
+  max-height: 70px;
+  margin: 0px auto 4px auto;
+}
+
+.profile-image img {
+  display: block;
+  border-radius: 50%;
+}
+
+.sidebar-menu {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 220px);
+}
+
+.sidebar-menu .menu-list {
+  padding: 0 16px 0 20px;
+}
+
+.sidebar-menu .menu-list .menu-item a {
+  color: var(--sidebar-text);
+}
+
+.sidebar-menu .menu-item a span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 16px;
+}
+
+.sidebar-menu .menu-item a:hover {
+  background-color: var(--accent-color);
+}
+
+.main-content {
+  width: calc(100% -320px);
+  margin-left: 320px;
+  min-height: 100vh;
+  background: var(--content-bg-color);
+  padding: 0 40px;
+  transition: all .3s;
+}
+
+.page-nav {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all .3s;
+}
+
+.navbar-item .indicator {
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: var(--accent-color)
+}
